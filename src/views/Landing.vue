@@ -425,7 +425,10 @@
                                     <textarea v-model="txtmessage" class="form-control form-control-alternative" name="name" rows="4"
                                               cols="80" placeholder="Type a message..."></textarea>
                             </base-input>
-                            <base-button type="default" round block size="lg" v-on:click="sendmsg">
+                            <base-button type="secondary" size="lg" block v-on:click="eraseMsg">
+                                Reset
+                            </base-button>
+                            <base-button type="default" round block size="lg" v-on:click="sendMsg">
                                 Send Message
                             </base-button>
                         </card>
@@ -513,7 +516,7 @@ export default {
     }
   },
   methods : {
-    sendmsg () {
+    sendMsg () {
       /* eslint-disable no-console */
       console.log("Clicked on 'Send Message'");
       console.log("Name :");
@@ -524,6 +527,11 @@ export default {
       console.log(this.txtmessage);
       /* eslint-enable no-console */
       // Send the message
+    },
+    eraseMsg () {
+      this.txtname = "";
+      this.txtemail = "";
+      this.txtmessage = "";
     }
   },
   components: {}

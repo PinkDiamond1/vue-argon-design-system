@@ -26,7 +26,7 @@
         </div>
         <slot v-bind="slotData">
             <input
-                    v-model="strValue"
+                    v-bind:value="value"
                     v-on="listeners"
                     v-bind="$attrs"
                     class="form-control"
@@ -82,6 +82,10 @@ export default {
       type: String,
       description: "Input css classes"
     },
+    value: {
+      type: [String, Number],
+      description: "Input value"
+    },
     addonRightIcon: {
       type: String,
       description: "Addon right icon"
@@ -93,7 +97,6 @@ export default {
   },
   data() {
     return {
-      strValue: "",
       focused: false
     };
   },
@@ -124,7 +127,7 @@ export default {
   },
   methods: {
     updateValue(evt) {
-      this.$emit("input", this.strValue);
+      this.$emit("input", evt.target.value);
     },
     onFocus(value) {
       this.focused = true;
