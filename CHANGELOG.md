@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.2.4] 2020-06-29
+- Fix value binding for input #4
+
 ## [1.2.3] 2020-06-17
 - Fix bad inline class for radio buttons
 
