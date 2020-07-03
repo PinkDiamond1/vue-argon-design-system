@@ -513,7 +513,7 @@ export default {
       txtname: "",
       txtemail: "",
       txtmessage: ""
-    }
+    };
   },
   methods : {
     sendMsg () {

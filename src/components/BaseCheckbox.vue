@@ -61,7 +61,7 @@ export default {
     }
   },
   mounted() {
-    this.cbId = randomString()
+    this.cbId = randomString();
   }
 };
 </script>
