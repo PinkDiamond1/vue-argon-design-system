@@ -1,7 +1,15 @@
 # Changelog
 
+## [1.3.0] 2020-12-03
+- Force using semicolon line ending in JS code
+- Bootstrap updated to 4.5
+- FontAwesome updated to 5 (from 4.7.0 to 5.13.1)
+- Carousel is fixed for IE11 [#2](https://github.com/bitlogik/vue-argon-design-system/issues/2)
+- Argon BaseDropdown added and fixed [#32](https://github.com/creativetimofficial/vue-argon-design-system/issues/32)
+- Change typo in a filename [#14](https://github.com/creativetimofficial/vue-argon-design-system/issues/14)
+
 ## [1.2.4] 2020-06-29
-- Fix value binding for input #4
+- Fix value binding for input [#4](https://github.com/bitlogik/vue-argon-design-system/issues/4)
 
 ## [1.2.3] 2020-06-17
 - Fix bad inline class for radio buttons
