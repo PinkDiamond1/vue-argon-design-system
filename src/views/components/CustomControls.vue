@@ -70,6 +70,21 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12 mt-4">
+                    <div class="mb-3">
+                        <small class="text-uppercase font-weight-bold">DropDown lists</small>
+                    </div>
+                    <base-dropdown>
+                        <base-button slot="title" type="primary" class="dropdown-toggle">
+                            DropDown
+                        </base-button>
+                        <a class="dropdown-item" href="#">Choice 1</a>
+                        <a class="dropdown-item" href="#">Choice 2</a>
+                        <a class="dropdown-item" href="#">Choice 3</a>
+                    </base-dropdown>
+                </div>
+            </div>
             <div class="row justify-content-center mt-md">
                 <div class="col-lg-12">
                     <!-- Menu -->

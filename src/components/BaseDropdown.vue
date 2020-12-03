@@ -62,11 +62,8 @@ export default {
   },
   methods: {
     toggleDropDown(ev) {
-      // Don't switch dropdown state on the child items
-      if (!(ev.target.className.startsWith("dropdown-item"))) {
-        this.isOpen = !this.isOpen;
-        this.$emit("change", this.isOpen);
-      }
+      this.isOpen = !this.isOpen;
+      this.$emit("change", this.isOpen);
     },
     closeDropDown() {
       this.isOpen = false;
